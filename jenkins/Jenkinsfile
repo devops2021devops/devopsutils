@@ -23,7 +23,7 @@ pipeline {
 
         stage('checkout app repo') {
               steps {
-                git 'git@github.com:devops2021devops/simple-java-maven-app.git'
+                git 'https://github.com/devops2021devops/simple-java-maven-app.git'
               }
         }
 
@@ -98,7 +98,7 @@ pipeline {
                   
                   //  git commit -m "add result.json file to ${env.RELEASE}" 
                   //sh "git push origin Dev Stage"
-                  sh "git push 'git@github.com:devops2021devops/simple-java-maven-app.git' Dev"
+                  sh "git push 'https://github.com/devops2021devops/devopsutils.git' Dev"
                 
              }
         }
