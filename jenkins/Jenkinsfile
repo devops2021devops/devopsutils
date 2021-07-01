@@ -82,8 +82,8 @@ pipeline {
                          print("create new env branch")
                          repo.create_head('Dev')
                     """.stripIndent()
-                  
-                  sh "git status"
+                  // delete version before upload new one
+                  sh "git push https://devops2021devops:Devops2021@github.com/devops2021devops/simple-java-maven-app.git --delete Dev Stage"
                   sh "git add result.json"
                   sh "git status"
                   sh "git commit -m 'add result.json file to Dev Stage'"
