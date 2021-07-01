@@ -23,7 +23,7 @@ pipeline {
 
         stage('checkout') {
               steps {
-                git 'https://github.com/jglick/simple-maven-project-with-tests.git'
+                git 'git@github.com:devops2021devops/simple-java-maven-app.git'
               }
         }
 
