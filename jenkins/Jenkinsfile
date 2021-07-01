@@ -94,6 +94,8 @@ pipeline {
                   // need try and catch to do git checkout -b if the branch already created
                   // if branch already exist need to force push/rebase/merge to Dev/Stage
                   sh "git checkout -b Stage || git checkout Stage"
+                  sh "git remote -v"
+                  
                   //  git commit -m "add result.json file to ${env.RELEASE}" 
                   sh "git push origin Dev Stage"
                   //sh "git push git@github.com:devops2021devops/simple-java-maven-app.git Dev Stage"
