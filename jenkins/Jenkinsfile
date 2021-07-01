@@ -95,8 +95,8 @@ pipeline {
                   // if branch already exist need to force push/rebase/merge to Dev/Stage
                   sh "git checkout -b Stage || git checkout Stage"
                   //  git commit -m "add result.json file to ${env.RELEASE}" 
-                  sh "git push --set-upstream origin"
-                  sh "git push git@github.com:devops2021devops/simple-java-maven-app.git Dev Stage"
+                  sh "git push origin Dev Stage"
+                  //sh "git push git@github.com:devops2021devops/simple-java-maven-app.git Dev Stage"
                 
              }
         }
