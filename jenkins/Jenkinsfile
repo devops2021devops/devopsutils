@@ -96,8 +96,10 @@ pipeline {
                   
                   //  git commit -m "add result.json file to ${env.RELEASE}" 
                   //sh "git push origin Dev Stage"
-                  sh "git push https://devops2021devops:Devops2021@github.com/devops2021devops/simple-java-maven-app.git --delete Dev Stage"
+                  
                   sh "git push https://devops2021devops:Devops2021@github.com/devops2021devops/simple-java-maven-app.git Dev Stage"
+                  
+                  sh "git push https://devops2021devops:Devops2021@github.com/devops2021devops/simple-java-maven-app.git --delete Dev Stage"
                 
              }
         }
