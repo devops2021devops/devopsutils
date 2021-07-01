@@ -83,11 +83,9 @@ pipeline {
                          repo.create_head('Dev')
                     """.stripIndent()
                   
-                  
-                  sh "git config  user.email 'devopstasks2021@gmail.com'"
-                  sh  "git config  user.name 'devops2021devops'"
-                  sh "git config  user.password 'Devops2021'"
+                  sh "git status"
                   sh "git add result.json"
+                  sh "git status"
                   sh "git commit -m 'add result.json file to Dev Stage'"
                   sh "git checkout -b Dev || git checkout Dev"
                    // git checkout -b ${env.RELEASE} 
