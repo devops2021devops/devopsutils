@@ -98,7 +98,7 @@ pipeline {
                   
                   //  git commit -m "add result.json file to ${env.RELEASE}" 
                   //sh "git push origin Dev Stage"
-                  sh "git push https://devops2021devops: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@github.com/devops2021devops/devopsutils.git Dev"
+                  sh "git push https://github.com/devops2021devops/devopsutils.git Dev"
                 
              }
         }
